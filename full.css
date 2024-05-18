@@ -1,0 +1,510 @@
+/* styling the background */
+body {
+    background: linear-gradient(to right, #b3d9ff 0%, #80bfff 100%);
+}
+
+/* styling the first heading */
+h1 {
+    text-align: center;
+    color: red;
+    font-size: xx-large;
+    font-family: 'cursive';
+}
+
+h2 {
+    text-align: center;
+    color: red;
+    font-size: large;
+    font-family: 'cursive';
+}
+.header {
+    background: linear-gradient(to right, #b3d9ff 0%, #80bfff 100%);
+    color:  black;
+    border:2px;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+.header a {
+    color: black;
+    border:2px;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* styling all buttons */
+.btn {
+    border: none; 
+    border-radius: 25px;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease; /*makes transitions between colours and pages smoother*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    font-family: Arial, sans-serif; 
+}
+.play{
+    background-color: #d53a9a; 
+    color: white; 
+    justify-content: center; 
+    transition: background-color 0.3s;
+}
+.btn.play:hover{background-color: #bf177f;}
+.btn.settings:hover{background-color: #1f9423; }
+/* specific button */
+.settings {
+    background-color: #4CAF50; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: white; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    transition: background-color 0.3s;}
+    
+.btn.back:hover {
+    background-color: #c12f1f;
+}
+.back {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 15px;
+    background-color: #ff4d4d;
+    color: white; 
+}
+.fa {
+    margin-right: 8px;
+}
+@media (max-width: 600px) {
+    .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.back2 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 15px;
+}
+.errorPopup{
+    display: block; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background:rgb(192, 180, 180); 
+    z-index: 1000;
+}
+.errorPopup2 {
+
+    background-color: rgb(147, 136, 136);
+    border-radius: 5px;
+    padding:20px;
+    transition: all 0.9s ease-in-out;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+ }
+
+.leaderboard {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+.play {
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 25px;
+
+}
+
+/* styling the centralise first button */
+#gameButton {
+    text-align: center;
+    padding: 150px;
+}
+#seeclass {
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: green;
+    color: white; 
+    text-decoration: none; 
+    padding: 5px 10px;
+    position: absolute; 
+    bottom: 10px;
+    left: 10px; 
+}
+#teachreport {
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: orange;
+    color: white; 
+    text-decoration: none; 
+    padding: 5px 10px;
+    position: absolute; 
+    bottom: 10px;
+    right: 10px; 
+}
+#inclass{    text-decoration: none;
+color:black;}
+#ldbrbtn{   border-radius: 5px;
+    border: 1px solid black;
+    background-color: blue;
+    color: white; 
+    text-decoration: none; 
+    padding: 3px;
+    position: absolute; 
+    bottom: 5px;
+    right: 5px; }
+#manageclass {
+    border-radius: 2px;
+    border-radius: 25px;
+    border: 2px solid black;
+    background-color: orange;
+    color: black; 
+    text-decoration: none; 
+    padding: 10px 20px;
+    position: absolute; 
+    top: 20px;
+    left: 20px; 
+}
+#teachld{
+    border-radius: 2px;
+    border-radius: 25px;
+    border: 2px solid black;
+    background-color: orange;
+    color: black; 
+    text-decoration: none; 
+    padding: 10px 20px;
+    position: absolute; 
+    bottom: 100px;
+    right: 10px; 
+}
+
+/* creating a stucture that looks correct */
+.form {
+    height: 540px;
+    width: 400px;
+    position: relative;
+    /* horozontially centres*reminder* */
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+}
+
+/* creating a box so it looks correct and professional */
+.subform {
+    width: 200px;
+    margin: 14px auto;
+    position: relative;
+    border-radius: 40px;
+}
+
+/* styling the toggle login/register button */
+.reg {
+    margin: 7%;
+    text-align: center;
+    padding: 2px 2px;
+    border: 2px solid black;
+    background-color: black;
+    color: red;
+    text-decoration: none;
+}
+
+/* look into removing underlines */
+/* styling the input boxes */
+.inputs {
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    padding: 4px 0px;
+}
+
+/* design labels */
+label {
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.select {
+    margin-left: 50px;
+}
+
+/* move/design text */
+#reg1 {
+    margin: 5%;
+    font-size: large;
+    text-align: center;
+    color: firebrick;
+    left: 50%;
+}
+
+/* styling the password box */
+#password {
+    margin-bottom: 0px;
+}
+
+#pwd {
+    margin-left: 30px;
+}
+
+#settings1 {
+    text-align: center;
+}
+
+#settings2 {
+    display: inline-block;
+    color: #ff6ec7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    border: 2px solid black;
+    border-radius: 5px 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+/*  creates box and is a container for other parts */
+.setting {
+    height: 280px;
+    width: 550px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    /* puts all on same line */
+    display: flex;
+    /* vertically centres */
+    align-items: center;
+
+}
+.tors{
+    height: 280px;
+    width: 550px;
+    position: relative;
+    margin: 6% auto;
+    background: linear-gradient(to right, #e9d045, #edb610);
+    color: orange;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+border-radius: 15px;
+}
+
+
+
+.sbutton1, .sbutton2, .sbutton3 {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    height: 50px;
+    flex-grow: 1; 
+    border: none; 
+    border-radius: 25px;
+    padding: 5px;
+    background-color: #f0ad4e; 
+    color: white; 
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.sbutton1:hover, .sbutton2:hover, .sbutton3:hover {
+    background-color: #ec971f; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-2px);
+}
+
+
+
+
+.joinClass {
+    height: 480px;
+    width: 550px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+#jc1 {
+    text-align: center;
+}
+
+#jc2 {
+    display: inline-block;
+    color: #000000;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: xx-large;
+    border: 2px solid black;
+    border-radius: 5px 5px;
+    padding: 7px;
+    background-color: #36af1b;
+}
+
+/*can use format document to format correctly*/
+#jc3 {
+    color: red;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.adjusterJoin {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+#textJC {
+    text-align: center;
+    margin-top: 10px;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom:30% ;    
+}
+
+
+    /*add alot of font weight bolds to code!!!!!!!!!!!!!!*/
+#sub2{
+    display: block;
+    width: auto; 
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 10px 20px;
+}
+#jc4{
+    color: red;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+.select2{
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+}
+.subform2 {
+    width: 250px;
+    margin: 14px auto;
+    position: relative;
+    border-radius: 40px;}
+
+.mybutton1,.mybutton2{
+display: flex;
+font-weight: bold;
+/* flex:1 keeps it proportial to the container-learnt from w3 schools https://www.w3schools.com/cssref/css3_pr_flex.php */
+flex: 1;
+text-align: center;
+height: 50px;
+flex-wrap: wrap;
+justify-content: center;
+border: 2px solid black;
+border-radius: 25px;
+padding: 15px;
+background-color: yellow;
+/*removes ugly underline */
+text-decoration: none;
+}
+
+.mybutton1 {
+    margin-left: 25%;
+    line-height: 50px;
+    margin-right: 5px;
+}
+.mybutton2 {
+    margin-right: 25%;
+    line-height: 50px;
+    margin-left: 5px;
+}
+.mybutton1 {
+    background-color: #70d8eb;
+}
+
+.mybutton1:hover {
+    background-color: #70e4f3;
+}
+
+.mybutton2 {
+    background-color: #ec50d8;
+}
+
+.mybutton2:hover {
+    background-color: #f263df;
+}
+.tableContainer {
+    max-height: 500px; 
+    overflow-y: auto; 
+    margin: 0 auto;
+    width: 100%; 
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+th,td {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+#ccSearch {
+    text-align: center;
+    color: #cf1d1d; 
+    font-size: 1.2em; 
+    font-family: 'Arial', sans-serif; 
+    font-weight: normal;
+    margin-top: 10px; 
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+    opacity: 0.9; 
+}

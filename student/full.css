@@ -1,0 +1,382 @@
+/* styling the background */
+body {
+    background-color: lightblue;
+}
+
+/* styling the first heading */
+h1 {
+    text-align: center;
+    color: red;
+    font-size: xx-large;
+    font-family: 'cursive';
+}
+
+h2 {
+    text-align: center;
+    color: red;
+    font-size: large;
+    font-family: 'cursive';
+}
+
+/* styling all buttons */
+.btn {
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: red;
+    color: black;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* specific button */
+.settings {
+    background-color: blue;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.back {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 15px;
+}
+
+.back2 {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 15px;
+}
+
+.leaderboard {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 25px 25px;
+}
+
+.play {
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px 25px;
+
+}
+
+/* styling the centralise first button */
+#gameButton {
+    text-align: center;
+    padding: 150px;
+}
+#seeclass {
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: green;
+    color: white; 
+    text-decoration: none; 
+    padding: 5px 10px;
+    position: absolute; 
+    bottom: 10px;
+    left: 10px; 
+}
+#teachreport {
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: orange;
+    color: white; 
+    text-decoration: none; 
+    padding: 5px 10px;
+    position: absolute; 
+    bottom: 10px;
+    right: 10px; 
+}
+#ldbr{    border-radius: 2px;
+    border: 1px solid black;
+    background-color: blue;
+    color: white; 
+    text-decoration: none; 
+    padding: 5px 10px;
+    position: absolute; 
+    bottom: 5px;
+    right: 5px; }
+#manageclass {
+    border-radius: 2px;
+    border-radius: 25px;
+    border: 2px solid black;
+    background-color: orange;
+    color: black; 
+    text-decoration: none; 
+    padding: 10px 20px;
+    position: absolute; 
+    top: 20px;
+    left: 20px; 
+}
+#teachld{
+    border-radius: 2px;
+    border-radius: 25px;
+    border: 2px solid black;
+    background-color: orange;
+    color: black; 
+    text-decoration: none; 
+    padding: 10px 20px;
+    position: absolute; 
+    bottom: 100px;
+    right: 10px; 
+}
+
+/* creating a stucture that looks correct */
+.form {
+    height: 540px;
+    width: 400px;
+    position: relative;
+    /* horozontially centres*reminder* */
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+}
+
+/* creating a box so it looks correct and professional */
+.subform {
+    width: 200px;
+    margin: 14px auto;
+    position: relative;
+    border-radius: 40px;
+}
+
+/* styling the toggle login/register button */
+.reg {
+    margin: 7%;
+    text-align: center;
+    padding: 2px 2px;
+    border: 2px solid black;
+    background-color: black;
+    color: red;
+    text-decoration: none;
+}
+
+/* look into removing underlines */
+/* styling the input boxes */
+.inputs {
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    padding: 4px 0px;
+}
+
+/* design labels */
+label {
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.select {
+    margin-left: 50px;
+}
+
+/* move/design text */
+#reg1 {
+    margin: 5%;
+    font-size: large;
+    text-align: center;
+    color: firebrick;
+    left: 50%;
+}
+
+/* styling the password box */
+#password {
+    margin-bottom: 0px;
+}
+
+#pwd {
+    margin-left: 30px;
+}
+
+#settings1 {
+    text-align: center;
+}
+
+#settings2 {
+    display: inline-block;
+    color: #ff6ec7;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    border: 2px solid black;
+    border-radius: 5px 5px;
+    padding: 5px;
+    background-color: white;
+}
+
+/*  creates box and is a container for other parts */
+.setting {
+    height: 280px;
+    width: 550px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    /* puts all on same line */
+    display: flex;
+    /* vertically centres */
+    align-items: center;
+
+}
+
+.sbutton1,
+.sbutton2
+{
+    display: flex;
+    font-weight: bold;
+    /* flex:1 keeps it proportial to the container-learnt from w3 schools https://www.w3schools.com/cssref/css3_pr_flex.php */
+    flex: 1;
+    text-align: center;
+    height: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 15px;
+    background-color: yellow;
+    /*removes ugly underline */
+    text-decoration: none;
+}
+
+.sbutton1 {
+    margin-left: 25%;
+    line-height: 24px;
+    margin-right: 5px;
+}
+
+.sbutton2 {
+    margin-right: 25%;
+    line-height: 50px;
+    margin-left: 5px;
+}
+
+
+.joinClass {
+    height: 480px;
+    width: 550px;
+    position: relative;
+    margin: 6% auto;
+    background: #fff;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+#jc1 {
+    text-align: center;
+}
+
+#jc2 {
+    display: inline-block;
+    color: #97e933;
+    font-family: 'Times New Roman', Times, sans-serif;
+    font-size: xx-large;
+    border: 2px solid black;
+    border-radius: 5px 5px;
+    padding: 7px;
+    background-color: red;
+}
+
+/*can use format document to format correctly*/
+#jc3 {
+    color: red;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 8px;
+    margin-left: 10px;
+}
+
+.adjusterJoin {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+#textJC {
+    text-align: center;
+    margin-top: 10px;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom:30% ;    
+}
+
+
+    /*add alot of font weight bolds to code!!!!!!!!!!!!!!*/
+#sub2{
+    display: block;
+    width: auto; 
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding: 10px 20px;
+}
+#jc4{
+    color: red;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+.select2{
+    display: inline-block;
+    margin-right: 15px;
+    text-align: center;
+}
+.subform2 {
+    width: 250px;
+    margin: 14px auto;
+    position: relative;
+    border-radius: 40px;}
+
+.mybutton1,.mybutton2{
+display: flex;
+font-weight: bold;
+/* flex:1 keeps it proportial to the container-learnt from w3 schools https://www.w3schools.com/cssref/css3_pr_flex.php */
+flex: 1;
+text-align: center;
+height: 50px;
+flex-wrap: wrap;
+justify-content: center;
+border: 2px solid black;
+border-radius: 25px;
+padding: 15px;
+background-color: yellow;
+/*removes ugly underline */
+text-decoration: none;
+}
+
+.mybutton1 {
+    margin-left: 25%;
+    line-height: 50px;
+    margin-right: 5px;
+}
+.mybutton2 {
+    margin-right: 25%;
+    line-height: 50px;
+    margin-left: 5px;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  td, th {
+    border: 2px solid black;
+    text-align: left;
+    padding: 6px;
+  }
+#ccSearch{
+    font-weight: bold;   
+    border: 2px solid black;
+    background-color: yellow;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
